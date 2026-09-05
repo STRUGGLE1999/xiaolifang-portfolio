@@ -1,4 +1,2 @@
-.git/
 .wrangler/
 .DS_Store
-*.log
