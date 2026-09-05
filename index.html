@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>肖丽芳 · AI 产品经理与研究者</title>
+  <meta name="description" content="肖丽芳的个人网站与作品集：聚焦计算机视觉、多智能体协同（Multi-Agent）与 AI-Native 交互界面的技术型 AI 产品经理。收录产业脱敏实战、开源作品、学术论文、已授权发明专利与 21.7W+ CSDN 技术博客。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- 顶部导航栏 -->
+    <header>
+      <nav class="site-nav">
+        <a href="#" class="site-brand">肖丽芳 · Lifang</a>
+        <div class="nav-menu">
+          <a href="#highlights" class="nav-link">精选成果</a>
+          <a href="#enterprise" class="nav-link">产业落地</a>
+          <a href="#software" class="nav-link">开源软件</a>
+          <a href="#writing" class="nav-link">博客沉淀</a>
+          <a href="#research" class="nav-link">学术专利</a>
+          <a href="https://github.com/STRUGGLE1999" target="_blank" rel="noopener" class="nav-link">GitHub ↗</a>
+          <a href="https://blog.csdn.net/qq_45257495" target="_blank" rel="noopener" class="nav-link">CSDN ↗</a>
+          <a href="./en/index.html" class="lang-switch">EN</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero 自述区 -->
+      <section id="about">
+        <h1>肖丽芳</h1>
+        <p class="hero-subtitle">技术型 AI 产品经理 · 计算机视觉与多智能体系统（Multi-Agent）研究者</p>
+
+        <!-- 数据背书看板 -->
+        <div class="stats-banner">
+          <div class="stat-item">码龄 <strong>7 年</strong> (2019-2026)</div>
+          <div class="stat-divider">|</div>
+          <div class="stat-item">全网博文 <strong>235 篇</strong></div>
+          <div class="stat-divider">|</div>
+          <div class="stat-item">累计阅读 <strong>217,400+ 次</strong></div>
+          <div class="stat-divider">|</div>
+          <div class="stat-item">代码分享 <strong>5,660+ 次</strong></div>
+          <div class="stat-divider">|</div>
+          <div class="stat-item">已授权发明专利 <strong>1 项</strong></div>
+          <div class="stat-divider">|</div>
+          <div class="stat-item">国际论文 <strong>3 篇</strong> (一作 🌟)</div>
+        </div>
+
+        <p class="lead-text">
+          你好，我是肖丽芳。我是一名坚持“算法理解与商业闭环兼备”的技术型 AI 产品经理。我坚信 AI 产品经理不仅是提示词的使用者，更是大模型与复杂业务场景之间的<strong>“价值翻译者”</strong>。
+        </p>
+
+        <p>
+          <strong>学术与专利底座</strong>：毕业于华南师范大学计算机学院（工学硕士，师从名师），核心研究方向为计算机视觉中的显著性目标检测（Salient Object Detection）与人体姿态估计。在校期间作为第一作者在 IEEE 国际学术会议发表论文，并在 Springer NCAA 等 SCI 期刊发表核心研究。作为核心主研人，申报 2 项国家发明专利，其中面向复杂政企知识库的《基于多智能体协同的检索生成方法》（Multi-Agent RAG）已获国家知识产权局<strong>正式授权</strong>（专利号：<code>ZL 2025 1 1242726.0</code>）。
+        </p>
+
+        <p>
+          <strong>重大产业落地</strong>：历任大型综合运营商软研中心 AI 产品负责人，主导了低空无人机海陆空监管、口岸海关多智能体线索研判、超特大城市政银住房金融规则引擎等 10 项重大政企 AI 平台从 0 到 1 的顶层设计与交付。擅长深入一线调研业务痛点，通过模块复用控制研发边界，并将大模型幻觉治理与写操作安全护栏贯彻到生产环境。
+        </p>
+
+        <p>
+          <strong>构建者精神与公域影响力</strong>：坚持 7 年技术写作，在 CSDN 等平台撰写 235 篇原创博文，全网累计阅读量超 21.7 万次。深度践行 AI-Native 全栈辅助编程，独立开源高约束旅行决策 Agent、Zotero 9 论文证据反查脑图插件，以及收获 36-Stars 的早期本地 RAG 知识库系统。
+        </p>
+      </section>
+
+      <!-- 板块一：核心精选 (Highlights) -->
+      <section id="highlights">
+        <h2>核心精选成果 · Highlights</h2>
+        <p class="work-desc" style="margin-bottom: 20px;">跨越产业实战、开源代码、发明专利与国际学术论文的 5 项王牌代表作：</p>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://github.com/STRUGGLE1999/ai-travel-agent" target="_blank" rel="noopener" class="work-title">风来成行 ｜ 懂变化的 AI 旅行搭子 (TripProof)</a>
+              <span class="badge badge-primary">线上可体验</span>
+              <span class="badge">Next.js</span>
+              <span class="badge">Neon PG</span>
+            </div>
+            <div class="work-date">2026年8月</div>
+          </div>
+          <p class="work-desc">
+            面向高约束自由行的“验证优先型”旅行决策智能体。提出“约束锁定 + 局部弹性重排”范式，内置状态机拦截无用重算，引入 Git-Style Diff 可视化呈现行程变更。集成 PostgreSQL 原子限流门禁与加盐签名防御。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="#research" class="work-title">基于多智能体协同的检索生成方法 (Multi-Agent RAG)</a>
+              <span class="badge badge-gold">已授权发明专利</span>
+              <span class="badge">国知局授权</span>
+            </div>
+            <div class="work-date">2025年1月</div>
+          </div>
+          <p class="work-desc">
+            国家知识产权局正式授权发明专利（专利号：ZL 2025 1 1242726.0）。以策略路由 Agent + 跨跳图谱实体对齐 + 对抗自编码器去噪，从根本上化解政企长文档问答幻觉与上下文丢失难题。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="#research" class="work-title">CMCLNet: 跨模态注意力融合与交互网络</a>
+              <span class="badge badge-primary">IEEE 国际会议 · 一作</span>
+              <span class="badge">计算机视觉</span>
+            </div>
+            <div class="work-date">2023年6月</div>
+          </div>
+          <p class="work-desc">
+            针对 RGB-D 显著性目标检测中深度传感器噪点与低光照失效难题，提出跨模态注意力融合（CMAF）与跨层特征交互（CLFI）架构，在 7 大基准数据集上超越主流 SOTA 方案。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://github.com/STRUGGLE1999/zotero-ai-notes" target="_blank" rel="noopener" class="work-title">Zotero AI Notes —— 论文证据链反查脑图插件</a>
+              <span class="badge">TypeScript</span>
+              <span class="badge">v0.4.1</span>
+            </div>
+            <div class="work-date">2026年7月</div>
+          </div>
+          <p class="work-desc">
+            面向科研人员的 Zotero 9 深度集成插件。提出“受限于证据链（Evidence-Grounded）”受限生成范式，模型仅基于划线原句提炼，动态生成带原著锚点反查的交互式 SVG 与 XMind 知识脑图。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="#enterprise" class="work-title">某大型综合能源央企“一网统飞”低空无人机智慧监管平台</a>
+              <span class="badge badge-primary">重大产业落地</span>
+              <span class="badge">低空经济</span>
+            </div>
+            <div class="work-date">2026年3月</div>
+          </div>
+          <p class="work-desc">
+            海陆空三维数字孪生感知底座，统一异构多机型遥测遥控协议；通过飞管飞服 60% 成熟模块裁剪复用，将复杂央企无人机巡检研发周期压缩 40%，实现微气象预警与航线自主避障。
+          </p>
+        </div>
+      </section>
+
+      <!-- 板块二：实战项目与解决方案 (Enterprise AI Solutions) -->
+      <section id="enterprise">
+        <h2>实战项目与企业解决方案 · Enterprise Solutions</h2>
+        <p class="work-desc" style="margin-bottom: 20px;">
+          以下产业项目均在通信运营商软件研发中心主导规划并推进落地。为严格遵守商业与技术保密合规要求，<strong>所有政企客户、高校与委办局名称均已作规范化脱敏指代</strong>：
+        </p>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">某大型能源央企“一网统飞”低空智能网联监管平台</span>
+              <span class="badge badge-primary">大型能源央企</span>
+              <span class="badge">物联网网关</span>
+            </div>
+            <div class="work-date">2026年3月</div>
+          </div>
+          <p class="work-desc">
+            针对近海油气平台无人机多机型异构协议碎片化痛点，设计统一南向协议网关与海陆空三维态势看板。通过飞服飞管成熟能力 60% 裁剪复用策略，在有限预算下实现平台按期上线与安全适航认证。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">某口岸海关缉私部门数据治理与多智能体研判系统</span>
+              <span class="badge badge-primary">涉密政法海关</span>
+              <span class="badge">国产信创 910B</span>
+            </div>
+            <div class="work-date">2026年5月</div>
+          </div>
+          <p class="work-desc">
+            设计涉密涉法多智能体反走私研判链路。构建“人-货-场-企-资”六维图谱，设计 ReAct 协作智能体进行线索自动化初筛与嫌疑链推演，全程适配华为昇腾 910B 国产自主算力底座与离线私有化安全隔离。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">某超特大城市住房金融智能辅助计算核验系统</span>
+              <span class="badge">政银金融科技</span>
+              <span class="badge">时序规则引擎</span>
+            </div>
+            <div class="work-date">2025年10月</div>
+          </div>
+          <p class="work-desc">
+            面向巨额住房公积金追缴与贷款核验场景。研发跨期银行流水与税务社保对齐计算引擎，将离散复杂的复利算法与政策合规判定封装为自研算法中台，成功抵御商业银行低价竞争并完成系统控盘。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">某特大型城市基层消防救援智慧营区管理系统</span>
+              <span class="badge">应急救援</span>
+              <span class="badge">基层减负哲学</span>
+            </div>
+            <div class="work-date">2025年4月</div>
+          </div>
+          <p class="work-desc">
+            深入基层特勤中队同吃同住调研，针对一线指战员痛恨多系统重复填报的顽疾，确立“业务动作自然留痕”产品哲学；构建体能训练“六边形战力模型”与车辆安防联动门禁，使表单录入工时下降 65%。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">某央国企长租资产管理平台公有云平滑迁移</span>
+              <span class="badge">央国企长租</span>
+              <span class="badge">冷热分层清单</span>
+            </div>
+            <div class="work-date">2025年7月</div>
+          </div>
+          <p class="work-desc">
+            主导长租房数字化平台向运营商公有云安全割接。精准框定范围（仅迁移新增轻资产），设计冷热分层存储清单架构（ECS / OOS / RDS），以细化至组件级的“保姆级运维清单”化解竞品超低价竞标冲击。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">某涉密国防/军工展馆 AI 智慧大屏与多模态展陈系统</span>
+              <span class="badge">涉密军工</span>
+              <span class="badge">离线多模态</span>
+            </div>
+            <div class="work-date">2024年11月</div>
+          </div>
+          <p class="work-desc">
+            涉密断网环境下的单机离线多模态展示工程。手写 4 套高保真 HTML 交互原型，输出端到端 PRD 需规，实现军功荣誉图谱、互动答题沙盘与多媒体声光联动。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">某特大城市交警指挥调度中心大屏敏捷改造</span>
+              <span class="badge">智慧交警</span>
+              <span class="badge">1天极速交付</span>
+            </div>
+            <div class="work-date">2024年9月</div>
+          </div>
+          <p class="work-desc">
+            紧急保障任务下 1 天内完成从设计稿到可交互 ECharts 敏捷大屏原型构建。全面评估存量高负载交通流量接口并制定防抖策略，在零后端返工的前提下支撑了现场调度演练。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">某检务司法机关本地单机高保密 ASR 语音会议系统</span>
+              <span class="badge">司法高保密</span>
+              <span class="badge">声纹说话人分离</span>
+            </div>
+            <div class="work-date">2024年6月</div>
+          </div>
+          <p class="work-desc">
+            针对办案谈话强私密性要求，设计物理断网的单机离线智能会议终端。集成特定行业词库微调的 ASR 与说话人分离模型，历经 4 版需求规格书打磨，会议纪要整理效率提升 4 倍。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">某大型医疗健康集团数据中台治理与智能预问检系统</span>
+              <span class="badge">智慧医疗</span>
+              <span class="badge">动态追问决策树</span>
+            </div>
+            <div class="work-date">2024年3月</div>
+          </div>
+          <p class="work-desc">
+            完成非标体检数据标准化字典治理。设计基于置信度门限的多轮动态追问决策树，融合语音 ASR 与既往报告 OCR 结构化提取能力，使现场体检登记与分流耗时缩短 35%。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">某头部免税商业集团智慧门店 AI 视频巡检平台</span>
+              <span class="badge">智慧商超</span>
+              <span class="badge">ByteTrack 跟踪</span>
+            </div>
+            <div class="work-date">2024年1月</div>
+          </div>
+          <p class="work-desc">
+            接入 GB28181 国标视频流，部署目标检测与 ByteTrack 动线追踪算法。完成 24.1 万元精细人日成本核算，并设计置信度降级安全兜底机制，杜绝巡店违规虚警造成的顾客误诉。
+          </p>
+        </div>
+      </section>
+
+      <!-- 板块三：软件系统与智能体 (Software & Intelligent Agents) -->
+      <section id="software">
+        <h2>软件系统与智能体生态 · Software & Agents</h2>
+        <p class="work-desc" style="margin-bottom: 20px;">
+          坚持作为“Active Builder”的自主研发项目、开源工具、生产力 Agent Skills 与公开课程：
+        </p>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://github.com/STRUGGLE1999/ai-travel-agent" target="_blank" rel="noopener" class="work-title">ai-travel-agent (风来成行)</a>
+              <span class="badge">开源</span>
+              <span class="badge">Next.js</span>
+              <span class="badge">Claude API</span>
+            </div>
+            <div class="work-date">2026年</div>
+          </div>
+          <p class="work-desc">
+            高约束自由行决策智能体全栈应用。基于 Neon Postgres Serverless 数据库与 Drizzle ORM，具备局部重排与行程版本 Diff 比对功能。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://github.com/STRUGGLE1999/zotero-ai-notes" target="_blank" rel="noopener" class="work-title">zotero-ai-notes</a>
+              <span class="badge">Zotero 9</span>
+              <span class="badge">TypeScript</span>
+            </div>
+            <div class="work-date">2026年</div>
+          </div>
+          <p class="work-desc">
+            学术论文证据链提炼插件。防大模型脱缰幻觉，支持从脑图节点一键精准反向穿透跳转至 PDF 原文高亮处。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://fashion-atlas-dossier.vercel.app" target="_blank" rel="noopener" class="work-title">fashion-atlas-dossier</a>
+              <span class="badge badge-primary">线上已运行</span>
+              <span class="badge">Next.js 15</span>
+              <span class="badge">Tailwind</span>
+            </div>
+            <div class="work-date">2026年</div>
+          </div>
+          <p class="work-desc">
+            时装美学数字档案与策展人智能体平台。构建美学标签多模态检索系统，部署于 Vercel 边缘网络。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://ai-pm-guide.netlify.app" target="_blank" rel="noopener" class="work-title">ai-pm-guide (AI 产品经理实战指南)</a>
+              <span class="badge badge-primary">线上已运行</span>
+              <span class="badge">Docsify</span>
+            </div>
+            <div class="work-date">2026年</div>
+          </div>
+          <p class="work-desc">
+            全网知名的 AI PM 实战与面试进阶体系平台。累计收录 10 大核心政企解决方案、算力测算与真题剖析。另有 <a href="https://struggle1999.github.io/ai-pm-guide/" target="_blank" rel="noopener">GitHub Pages 镜像</a>。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://github.com/STRUGGLE1999/markdown-platform-publisher-skill" target="_blank" rel="noopener" class="work-title">markdown-platform-publisher-skill</a>
+              <span class="badge">Agent Skill</span>
+              <span class="badge">Cloudflare R2</span>
+            </div>
+            <div class="work-date">2026年</div>
+          </div>
+          <p class="work-desc">
+            面向 CSDN、知乎、掘金的多平台博客一键自动化排版与图床推流发布 Skill，搭配 PicList API 与 Cloudflare R2 对象存储。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://github.com/STRUGGLE1999/lifang-illustration-styles" target="_blank" rel="noopener" class="work-title">lifang-illustration-styles</a>
+              <span class="badge">Agent Skill</span>
+              <span class="badge">多模态生成</span>
+            </div>
+            <div class="work-date">2026年</div>
+          </div>
+          <p class="work-desc">
+            私人插图风格提示词库与图像生成 Skill。固化 6 大高品质美学设计卡片，支撑产品文档与文章插图批量生图。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://github.com/STRUGGLE1999/claude-code-pm-course-cn" target="_blank" rel="noopener" class="work-title">claude-code-pm-course-cn</a>
+              <span class="badge">交互式课程</span>
+              <span class="badge">Claude Code</span>
+            </div>
+            <div class="work-date">2026年</div>
+          </div>
+          <p class="work-desc">
+            专门面向产品经理与业务架构师的 Claude Code 交互式全中文实战教程，引导非纯代码人员借助 AI Agent 构建敏捷原型。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://github.com/STRUGGLE1999/LangChain-ChatGLM3" target="_blank" rel="noopener" class="work-title">LangChain-ChatGLM3</a>
+              <span class="badge badge-gold">⭐ 36 Stars</span>
+              <span class="badge">私有化 RAG</span>
+            </div>
+            <div class="work-date">2024年</div>
+          </div>
+          <p class="work-desc">
+            大模型落地元年的高赞开源成果。基于 LangChain 框架与 ChatGLM3 本地模型构建的轻量级知识库 RAG 问答系统。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://github.com/STRUGGLE1999/Retinal-Edema-Detection" target="_blank" rel="noopener" class="work-title">Retinal-Edema-Detection</a>
+              <span class="badge">华为昇思 MindSpore</span>
+              <span class="badge">医学影像分割</span>
+            </div>
+            <div class="work-date">2023年</div>
+          </div>
+          <p class="work-desc">
+            基于华为自主昇思 MindSpore 深度学习框架的视网膜黄斑水肿 OCT 病理图像分割系统，深度验证国产信创框架工业落地。
+          </p>
+        </div>
+      </section>
+
+      <!-- 板块四：技术博客与思想沉淀 (Writing & Posts) -->
+      <section id="writing">
+        <h2>技术博客与思想沉淀 · Writing & Posts</h2>
+        <p class="work-desc" style="margin-bottom: 20px;">
+          我在 <a href="https://blog.csdn.net/qq_45257495" target="_blank" rel="noopener">CSDN (STRUGGLE_xlf)</a> 坚持技术写作 7 年，已发布 235 篇原创博文，全网累计阅读超 21.7 万次。以下精选 11 篇代表作（点击标题可直接在新标签页阅读原文）：
+        </p>
+
+        <h3>一、AI 产品经理顶层认知与商业落地篇</h3>
+        
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://blog.csdn.net/qq_45257495/article/details/162739733" target="_blank" rel="noopener" class="work-title">AI 产品经理核心能力：从场景判断到产品落地的系统方法</a>
+              <span class="badge badge-primary">核心方法论</span>
+            </div>
+            <div class="work-date">2026年7月</div>
+          </div>
+          <p class="work-desc">
+            提出“5 层结构 + 2 种产品形态 + 3 层价值递进”体系，系统阐述 AI PM 如何从“提示词工程师”蜕变为平衡技术风险与商业回报的“价值翻译者”。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://blog.csdn.net/qq_45257495/article/details/163436107" target="_blank" rel="noopener" class="work-title">为什么很多 AI 工程项目无法帮助求职者拿到工作？</a>
+              <span class="badge">工程成熟度 5 级</span>
+            </div>
+            <div class="work-date">2026年8月</div>
+          </div>
+          <p class="work-desc">
+            直击“玩具级 Demo”与“企业生产级系统”的鸿沟，阐述为什么求职时评估框架（Evaluations）、链路追踪（Tracing）与错误分析远比界面功能数量更具说服力。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://blog.csdn.net/qq_45257495/article/details/162205411" target="_blank" rel="noopener" class="work-title">敏捷已死：智能体驱动开发时代</a>
+              <span class="badge">范式转移</span>
+            </div>
+            <div class="work-date">2026年6月</div>
+          </div>
+          <p class="work-desc">
+            论述在智能体代码生成几乎零边际成本的时代，研发核心瓶颈如何从“编码速度”转向“确定性目标定义、高纯度上下文与安全边界约束”。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://blog.csdn.net/qq_45257495/article/details/162554834" target="_blank" rel="noopener" class="work-title">AI 商业化落地与 RAG 工程化避坑指南</a>
+              <span class="badge">RAG 避坑</span>
+            </div>
+            <div class="work-date">2026年6月</div>
+          </div>
+          <p class="work-desc">
+            总结政企 RAG 落地中高频的“演示惊艳、上线崩溃”原因，输出分级切片、语义校验与模型路由的工程化避坑清单。
+          </p>
+        </div>
+
+        <h3>二、现象级爆款与 AI-Native 生产力实战篇</h3>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://blog.csdn.net/qq_45257495/article/details/161626932" target="_blank" rel="noopener" class="work-title">Codex × Draw.io MCP：AI 自动绘制架构图</a>
+              <span class="badge badge-heat">🔥 2,400+ 阅读</span>
+              <span class="badge">MCP 协议</span>
+            </div>
+            <div class="work-date">2026年6月</div>
+          </div>
+          <p class="work-desc">
+            利用最新 Model Context Protocol (MCP) 接入 Draw.io 绘图引擎，实现输入系统逻辑即刻自动生成可直接编辑的矢量架构图。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://blog.csdn.net/qq_45257495/article/details/161510932" target="_blank" rel="noopener" class="work-title">Codex × PPT Skill：一句话生成商业演示文稿</a>
+              <span class="badge badge-heat">🔥 2,200+ 阅读</span>
+              <span class="badge">Skill 机制</span>
+            </div>
+            <div class="work-date">2026年5月</div>
+          </div>
+          <p class="work-desc">
+            深入剖析智能体体系中 Plugins 与 Skills 的运行机制差异，演示如何通过一条结构化提示词全自动生成排版工整的商用 PPT。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://blog.csdn.net/qq_45257495/article/details/162431373" target="_blank" rel="noopener" class="work-title">本地博客图片自动上传工作流：Cloudflare R2 + PicList + Codex</a>
+              <span class="badge">开源配套教程</span>
+            </div>
+            <div class="work-date">2026年6月</div>
+          </div>
+          <p class="work-desc">
+            解决技术博客跨平台多发时图片防盗链与图床断链问题，为开源项目 <code>markdown-platform-publisher-skill</code> 编写的落地实操教程。
+          </p>
+        </div>
+
+        <h3>三、智能体工程与大模型系统演进篇</h3>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://blog.csdn.net/qq_45257495/article/details/163537686" target="_blank" rel="noopener" class="work-title">30个智能体工程核心概念全景图</a>
+              <span class="badge badge-primary">🌟 体系化长文</span>
+            </div>
+            <div class="work-date">2026年8月</div>
+          </div>
+          <p class="work-desc">
+            系统拆解智能体工程六大层级：核心构件、配置层、能力层（MCP）、编排调度层、安全护栏层（沙箱与门禁）与全链路可观测性。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://blog.csdn.net/qq_45257495/article/details/162384218" target="_blank" rel="noopener" class="work-title">从 LLM 到 RAG，Agent，MCP —— AI 系统演进</a>
+              <span class="badge">高赞</span>
+              <span class="badge">专利同源</span>
+            </div>
+            <div class="work-date">2026年6月</div>
+          </div>
+          <p class="work-desc">
+            梳理从纯语言模型推演到外挂检索（RAG）、主动任务解决（Agent）及跨应用统一上下文协议（MCP）的完整演进史，与已授权发明专利逻辑深层共鸣。
+          </p>
+        </div>
+
+        <h3>四、破万长青底座与信创算力篇</h3>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://blog.csdn.net/qq_45257495/article/details/130240385" target="_blank" rel="noopener" class="work-title">华为昇腾 CANN 训练营第一季：昇腾 AI 入门课（Pytorch）</a>
+              <span class="badge badge-gold">🏆 11,800+ 阅读</span>
+              <span class="badge">信创底座</span>
+            </div>
+            <div class="work-date">2023年4月</div>
+          </div>
+          <p class="work-desc">
+            在大模型初期深入华为昇腾 NPU 架构与 Ascend C 算子开发底层，具备自主可控国产算力调优的深厚技术储备。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://blog.csdn.net/qq_45257495/article/details/135357123" target="_blank" rel="noopener" class="work-title">使用 LangChain 框架加载与解析多格式文档</a>
+              <span class="badge badge-gold">🏆 10,200+ 阅读</span>
+              <span class="badge">⭐36 Stars 开源</span>
+            </div>
+            <div class="work-date">2024年1月</div>
+          </div>
+          <p class="work-desc">
+            源码级剖析 LangChain Document Loaders 运行机理，作为早期爆款开源项目 <code>LangChain-ChatGLM3</code> 的底层解析。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <a href="https://blog.csdn.net/qq_45257495/article/details/107025135" target="_blank" rel="noopener" class="work-title">区别顺序表的位序和数组下标：为什么位序从1开始，下标从0开始？</a>
+              <span class="badge badge-gold">🏆 11,400+ 阅读</span>
+              <span class="badge">科班长青</span>
+            </div>
+            <div class="work-date">2020年6月</div>
+          </div>
+          <p class="work-desc">
+            见证 7 年前计算机科班学习积累与深入浅出的技术转译表达能力，长青解答数据结构与算法基础高频疑惑。
+          </p>
+        </div>
+      </section>
+
+      <!-- 板块五：学术成果与发明专利 (Research, Patents & Credentials) -->
+      <section id="research">
+        <h2>学术成果与发明专利 · Research & Patents</h2>
+        <p class="work-desc" style="margin-bottom: 20px;">具有法律和学术同行评审效力的硬核研究资产与国家级资质证书：</p>
+
+        <h3>国际学术论文 (Academic Publications)</h3>
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">《CMCLNet: Cross-Modality Attention Fusion and Cross-Level Feature Interaction Network for RGB-D Salient Object Detection》</span>
+              <span class="badge badge-primary">第一作者 (First Author 🌟)</span>
+            </div>
+            <div class="work-date">2023年</div>
+          </div>
+          <p class="work-desc">
+            IEEE CCIS 2023 国际会议论文。创新提出跨模态注意力融合（CMAF）与跨层特征交互（CLFI）架构，高效抑制深度传感器噪点。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">《FGNet: Fixation guidance network for salient object detection》</span>
+              <span class="badge">SCI 期刊核心作者</span>
+              <span class="badge">已被引 11 次</span>
+            </div>
+            <div class="work-date">2023年</div>
+          </div>
+          <p class="work-desc">
+            发表于 Springer 旗下的 Neural Computing and Applications (NCAA)。借鉴人类视觉注视点机理构建注视引导网络，提升复杂背景下的显著性检测鲁棒性。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">《A Virtual Body Try-on Model Based on Edge Detection Algorithm》</span>
+              <span class="badge">IEEE 国际会议</span>
+            </div>
+            <div class="work-date">2022年</div>
+          </div>
+          <p class="work-desc">
+            聚焦边缘检测与人体姿态估计，结合生成对抗网络实现高真实度的虚拟试衣与图像融合生成。
+          </p>
+        </div>
+
+        <h3>国家发明专利 (Invention Patents)</h3>
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">《基于多智能体协同的检索生成方法、系统、终端及介质》</span>
+              <span class="badge badge-gold">国家知识产权局已授权</span>
+            </div>
+            <div class="work-date">2025年1月</div>
+          </div>
+          <p class="work-desc">
+            <strong>已授权国家发明专利（专利号：ZL 2025 1 1242726.0）</strong>。针对长文档与复杂专业知识库，创新构建多智能体协同路由与对抗自编码器去噪机制，全面化解幻觉。
+          </p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">《一种检测模型训练方法、目标检测方法和相关设备》</span>
+              <span class="badge">初审合格实审中</span>
+            </div>
+            <div class="work-date">2025年</div>
+          </div>
+          <p class="work-desc">
+            申请号：202511080160.6。提出 HMPAC 混合多级原型注意力校准架构，显著改善小目标与遮挡物体的检测召回率。
+          </p>
+        </div>
+
+        <h3>专业资质认证 (Professional Credentials)</h3>
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">中华人民共和国工业和信息化部：AI 智能体开发应用技术（高级）</span>
+              <span class="badge badge-primary">国家部委高级证书</span>
+            </div>
+            <div class="work-date">2026年</div>
+          </div>
+          <p class="work-desc">证书编号：B26438030043026188。全国高级人工智能智能体开发与系统架构专业资质。</p>
+        </div>
+
+        <div class="work-item">
+          <div class="workline">
+            <div class="work-title-group">
+              <span class="work-title">中国电信天翼云：天翼云高级解决方案架构师 (SCCP)</span>
+              <span class="badge">央企云计算高级架构师</span>
+            </div>
+            <div class="work-date">2024年</div>
+          </div>
+          <p class="work-desc">证书编号：SCCP0124000009841。具备复杂混合云、云网融合、高可用容灾与算力集群规划设计能力。</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- 底部页脚 -->
+    <footer>
+      <div>
+        <span>© 2026 肖丽芳 · Xiao Lifang</span>
+      </div>
+      <div class="footer-links">
+        <a href="#about">回到顶部 ↑</a>
+        <a href="https://github.com/STRUGGLE1999" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://blog.csdn.net/qq_45257495" target="_blank" rel="noopener">CSDN</a>
+        <a href="mailto:contact@xiaolifang.com">Email</a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

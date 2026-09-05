@@ -1,0 +1,341 @@
+/* ==========================================================================
+   肖丽芳个人网站样式表 (基于 thesephist.com 经典极简风格)
+   Pure White #FFFFFF | Noto Serif SC + IBM Plex Serif | High Density Worklines
+   ========================================================================== */
+
+:root {
+  --bg-color: #FFFFFF;
+  --text-main: #1A1A1A;
+  --text-muted: #555555;
+  --text-light: #777777;
+  --border-light: #EEEEEE;
+  --border-dashed: rgba(0, 0, 0, 0.09);
+  --badge-bg: #F4F4F5;
+  --badge-text: #444446;
+  --badge-accent-bg: #EAEAEA;
+  --badge-accent-text: #111111;
+  --link-hover-opacity: 0.55;
+  --font-serif: 'Noto Serif SC', 'Songti SC', 'Source Han Serif SC', SimSun, 'IBM Plex Serif', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font-serif);
+  font-size: 16.5px;
+  line-height: 1.85;
+  letter-spacing: 0.012em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 布局容器：黄金阅读列 720px */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 50px 24px 100px 24px;
+}
+
+/* 顶部导航 */
+header {
+  margin-bottom: 50px;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.site-brand {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--text-main);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.lang-switch {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  padding: 2px 8px;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text-main);
+  transition: all 0.15s ease;
+}
+
+.lang-switch:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  border-color: #000000;
+}
+
+/* 标题系统 */
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  font-size: 16.5px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 56px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-light);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  color: #2A2A2A;
+}
+
+p {
+  margin-bottom: 20px;
+  color: var(--text-main);
+}
+
+.lead-text {
+  font-size: 17.5px;
+  line-height: 1.9;
+  color: #111111;
+}
+
+/* 超链接样式 */
+a {
+  color: var(--text-main);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3.5px;
+  transition: opacity 0.15s ease;
+}
+
+a:hover {
+  opacity: var(--link-hover-opacity);
+}
+
+/* 单行条目 (thesephist.com Workline 结构) */
+.work-item {
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--border-dashed);
+}
+
+.work-item:last-child {
+  border-bottom: none;
+}
+
+.workline {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.work-title-group {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.work-title {
+  font-weight: 600;
+  font-size: 16.5px;
+  color: var(--text-main);
+}
+
+.work-date {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--text-light);
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+
+.work-desc {
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: #4A4A4A;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+/* 极简徽章标签 (Badge) */
+.badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 1.5px 6.5px;
+  border-radius: 3px;
+  background-color: var(--badge-bg);
+  color: var(--badge-text);
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+.badge-primary {
+  background-color: var(--badge-accent-bg);
+  color: var(--badge-accent-text);
+  font-weight: 600;
+}
+
+.badge-heat {
+  background-color: #FDF2F2;
+  color: #C53030;
+  border: 1px solid #FED7D7;
+}
+
+.badge-gold {
+  background-color: #FEFCBF;
+  color: #744210;
+  border: 1px solid #FAF089;
+}
+
+/* 数据背书看板 */
+.stats-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0 32px 0;
+  padding: 14px 18px;
+  background-color: #FAFAFA;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+}
+
+.stat-item {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.stat-item strong {
+  color: #000000;
+  font-weight: 600;
+}
+
+.stat-divider {
+  color: #D1D1D1;
+}
+
+/* 引用块 / 核心观点 */
+blockquote {
+  border-left: 2px solid #333333;
+  padding-left: 18px;
+  margin: 24px 0;
+  color: #444444;
+  font-style: italic;
+}
+
+/* 页脚 */
+footer {
+  margin-top: 80px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13.5px;
+  color: var(--text-light);
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: var(--text-light);
+}
+
+.footer-links a:hover {
+  color: var(--text-main);
+}
+
+/* 响应式调整 */
+@media (max-width: 640px) {
+  .container {
+    padding: 30px 18px 60px 18px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 19px;
+    margin-top: 40px;
+  }
+  .workline {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .work-date {
+    margin-left: 0;
+    font-size: 12px;
+  }
+  .stats-banner {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .stat-divider {
+    display: none;
+  }
+}
